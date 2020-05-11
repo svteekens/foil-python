@@ -1,3 +1,6 @@
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
+
 import logging
 import unittest
 from trimlogic.test.helper import FoilTestCase
@@ -7,6 +10,7 @@ from trimlogic.predicate import VariableFactory, UniqueVariableFactory, AtomFact
 from trimlogic.foil import TrainingSet, find_gainful_and_determinate_literals, construct_clause_recursive, foil, find_partial_ordering_of_terms, determine_param_orderings
 from trimlogic.algorithm import fol_bc_ask
 from trimlogic.term import Atom
+
 
 class FamilyMemberFactory:
   
@@ -154,7 +158,11 @@ class FamilyTreeTestCase(FoilTestCase):
     self.kb.remove(grandfather)
     self.print_rules(grandfather)
 
-
+print("Hoi, ik ben Seth")
 if __name__ == "__main__":
+   
     unittest.main()
     
+
+ 
+
